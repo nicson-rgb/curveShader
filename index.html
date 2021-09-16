@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <title>curveShader</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .wrap {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+      }
+      h1 {
+        display: flex;
+        overflow: hidden;
+        line-height: 1;
+      }
+
+      h1 span {
+        font-size: 40vw;
+        font-weight: 500;
+        font-family: 'Oswald';
+        transform: translateY(100%);
+        color: #fff;
+      }
+      #canvas {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+      }
+    </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1 class="text">
+      <span>H</span>
+      <span>E</span>
+      <span>L</span>
+      <span>L</span>
+      <span>O</span>
+    </h1>
+  </div>
+    <div id="canvas"></div>
+
+    <script type="module" src="./main.js"></script>
+    
+</body>
+</html>
