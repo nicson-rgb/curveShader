@@ -4,7 +4,7 @@ float PI = 3.141529;
 
 void main() {
   vec2 newUV = vUv;
-  float bottom = abs(1. - progress);
+  float bottom = 1. - progress;
   float curveStrength = 1.;
   float waveStrength = 1.;
   // float curve = progress + sin(newUV.x * PI * waveStrength) * progress * bottom;
